@@ -23,7 +23,7 @@ namespace SDTNQGAMA_008G
 
 
         #region Chip parameters
-
+        //--------!!!!!!!!!! WARNING   !!! . Chip not verified ---------------------------
         //--------------------Vendor Specific Pin configuration---------------------------
 
         //  VSP1(38pin) - NC    
@@ -34,13 +34,13 @@ namespace SDTNQGAMA_008G
         {
             myChip.devManuf = "SANDISK";
             myChip.name = "SDTNQGAMA_008G";
-            myChip.chipID = "unknown";      // device ID - unknown
+            myChip.chipID = "0645DE94937657";      // device ID - 06h,45h,DEh,94h,93h,76h,57h
 
             myChip.width = Organization.x8;    // chip width - 8 bit
             myChip.bytesPP = 2048;             // page size - 2048 byte (2Kb)
             myChip.spareBytesPP = 64;          // size Spare Area - 64 byte
-            myChip.pagesPB = 64;               // the number of pages per block - 64 
-            myChip.bloksPLUN = 2048;           // number of blocks in CE - 2048
+            myChip.pagesPB = 128;               // the number of pages per block - 64 
+            myChip.bloksPLUN = 2116;           // number of blocks in CE - 2048
             myChip.LUNs = 1;                   // the amount of CE in the chip
             myChip.colAdrCycles = 2;           // cycles for column addressing
             myChip.rowAdrCycles = 3;           // cycles for row addressing 
@@ -77,17 +77,12 @@ namespace SDTNQGAMA_008G
 
             myChip.registers.Add(                  // https://github.com/JuliProg/Wiki/wiki/ID-Register
                 "Id Register").
-                Size(5).
+                Size(7).
                 Operations("ReadId_90h");          // https://github.com/JuliProg/Wiki/wiki/ID-Register-operations#readid_90hdll     
                // Interpretation(ID_interpreting);
             
            
-            myChip.registers.Add(                  // https://github.com/JuliProg/Wiki/wiki/UNIQUE-ID-Register
-                "UNIQUE ID Register").
-                Size(16).
-                Operations("ReadUniqueId_EDh");     // https://github.com/JuliProg/Wiki/wiki/UNIQUE-ID-Register-operations         
-
-
+           
             myChip.registers.Add(
                 "Parameter Page").
                 Size(768).
@@ -95,7 +90,7 @@ namespace SDTNQGAMA_008G
 
             #endregion
 
-
+  
         }
 
         #region Interpretation of ID-register values ​​(optional)
