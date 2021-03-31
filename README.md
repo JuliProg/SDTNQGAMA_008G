@@ -78,7 +78,7 @@ Dependency injection, DI based on MEF framework is used to connect the chip to t
 
 
             myChip.registers.Add(
-                "Read parameter page").
+                "Parameter Page").
                 Size(768).
                 Operations("ReadParameterPage_ECh");
 
@@ -91,6 +91,7 @@ Dependency injection, DI based on MEF framework is used to connect the chip to t
         
 ```
 </section>
+
 
 
 
