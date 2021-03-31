@@ -2,7 +2,7 @@ using NAND_Prog;
 using System;
 using System.ComponentModel.Composition;
 
-namespace W29N02GVSIAA
+namespace SDTNQGAMA_008G
 {
     /*
      use the design :
@@ -33,7 +33,7 @@ namespace W29N02GVSIAA
         ChipAssembly()
         {
             myChip.devManuf = "WINBOND";
-            myChip.name = "W29N02GVSIAA";
+            myChip.name = "SDTNQGAMA_008G";
             myChip.chipID = "EFDA909504";      // device ID - EFh DAh 90h 95h 04h (w29n02gv_reva.pdf page 26)
 
             myChip.width = Organization.x8;    // chip width - 8 bit
@@ -141,9 +141,9 @@ namespace W29N02GVSIAA
                 case 1:
                     str_result += "Device ";
                     if (bt == 0xDA)
-                        str_result += "is W29N02GVSIAA";
+                        str_result += "is SDTNQGAMA_008G";
                     else
-                        str_result += "is not W29N02GVSIAA";
+                        str_result += "is not SDTNQGAMA_008G";
                     str_result += Environment.NewLine;
                     break;
 

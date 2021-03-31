@@ -1,10 +1,10 @@
-![Create new chip](https://github.com/JuliProg/W29N02GVSIAA/workflows/Create%20new%20chip/badge.svg?event=repository_dispatch)
-![ChipUpdate](https://github.com/JuliProg/W29N02GVSIAA/workflows/ChipUpdate/badge.svg)
+![Create new chip](https://github.com/JuliProg/SDTNQGAMA_008G/workflows/Create%20new%20chip/badge.svg?event=repository_dispatch)
+![ChipUpdate](https://github.com/JuliProg/SDTNQGAMA_008G/workflows/ChipUpdate/badge.svg)
 # Join the development of the project ([list of tasks](https://github.com/users/JuliProg/projects/1))
 
 
-# W29N02GVSIAA
-Implementation of the W29N02GVSIAA chip for the JuliProg programmer
+# SDTNQGAMA_008G
+Implementation of the SDTNQGAMA_008G chip for the JuliProg programmer
 
 Dependency injection, DI based on MEF framework is used to connect the chip to the programmer.
 
@@ -23,7 +23,7 @@ Dependency injection, DI based on MEF framework is used to connect the chip to t
         ChipAssembly()
         {
             myChip.devManuf = "WINBOND";
-            myChip.name = "W29N02GVSIAA";
+            myChip.name = "SDTNQGAMA_008G";
             myChip.chipID = "EFDA909504";      // device ID - EFh DAh 90h 95h 04h (w29n02gv_reva.pdf page 26)
 
             myChip.width = Organization.x8;    // chip width - 8 bit
@@ -86,6 +86,7 @@ Dependency injection, DI based on MEF framework is used to connect the chip to t
         
 ```
 </section>
+
 
 
 

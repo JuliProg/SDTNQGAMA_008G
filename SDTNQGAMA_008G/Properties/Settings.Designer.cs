@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace W29N02GVSIAA.Properties {
+namespace SDTNQGAMA_008G.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
