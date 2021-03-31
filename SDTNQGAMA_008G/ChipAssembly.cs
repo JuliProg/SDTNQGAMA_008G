@@ -86,7 +86,12 @@ namespace SDTNQGAMA_008G
                 "UNIQUE ID Register").
                 Size(16).
                 Operations("ReadUniqueId_EDh");     // https://github.com/JuliProg/Wiki/wiki/UNIQUE-ID-Register-operations         
-                
+
+
+            myChip.registers.Add(
+                "Read parameter page").
+                Size(768).
+                Operations("ReadParameterPage_ECh");
 
             #endregion
 
