@@ -89,7 +89,7 @@ namespace SDTNQGAMA_008G
 
 
             myChip.registers.Add(
-                "Read parameter page").
+                "Parameter Page").
                 Size(768).
                 Operations("ReadParameterPage_ECh");
 
