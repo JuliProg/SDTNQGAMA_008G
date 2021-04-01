@@ -27,10 +27,10 @@ Dependency injection, DI based on MEF framework is used to connect the chip to t
             myChip.chipID = "0645DE94937657";      // device ID - 06h,45h,DEh,94h,93h,76h,57h
 
             myChip.width = Organization.x8;    // chip width - 8 bit
-            myChip.bytesPP = 2048;             // page size - 2048 byte (2Kb)
-            myChip.spareBytesPP = 64;          // size Spare Area - 64 byte
-            myChip.pagesPB = 128;               // the number of pages per block - 64 
-            myChip.bloksPLUN = 2116;           // number of blocks in CE - 2048
+            myChip.bytesPP = 16384;             // page size - 16384 byte (16Kb)
+            myChip.spareBytesPP = 1280;          // size Spare Area - 1280 byte
+            myChip.pagesPB = 256;               // the number of pages per block - 256 
+            myChip.bloksPLUN = 2048;           // number of blocks in CE - 2048
             myChip.LUNs = 1;                   // the amount of CE in the chip
             myChip.colAdrCycles = 2;           // cycles for column addressing
             myChip.rowAdrCycles = 3;           // cycles for row addressing 
@@ -86,6 +86,7 @@ Dependency injection, DI based on MEF framework is used to connect the chip to t
         
 ```
 </section>
+
 
 
 
