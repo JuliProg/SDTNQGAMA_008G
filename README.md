@@ -10,8 +10,7 @@ Dependency injection, DI based on MEF framework is used to connect the chip to t
 
 <section class = "listing">
 
-# Chip parameters
-
+# Chip parameters
 ```c#
 
         //--------!!!!!!!!!! WARNING   !!! . Chip not verified ---------------------------
@@ -39,8 +38,7 @@ Dependency injection, DI based on MEF framework is used to connect the chip to t
             (myChip as ChipPrototype_v1).EccBits = 1;                // required Ecc bits for each 512 bytes
 
 ```
-# Chip operations
-
+# Chip operations
 ```c#
 
 
@@ -52,8 +50,7 @@ Dependency injection, DI based on MEF framework is used to connect the chip to t
                    Operations("PageProgram_80h_10h");         // https://github.com/JuliProg/Wiki/wiki/Command-Sets#pageprogram_80h_10hdll
 
 ```
-# Chip registers (optional)
-
+# Chip registers (optional)
 ```c#
 
 
@@ -82,8 +79,7 @@ Dependency injection, DI based on MEF framework is used to connect the chip to t
                 Operations("ReadParameterPage_ECh");
 
 ```
-# Interpretation of ID-register values ​​(optional)
-
+# Interpretation of ID-register values ​​(optional)
 ```c#
 
 
@@ -91,6 +87,7 @@ Dependency injection, DI based on MEF framework is used to connect the chip to t
         
 ```
 </section>
+
 
 
 
